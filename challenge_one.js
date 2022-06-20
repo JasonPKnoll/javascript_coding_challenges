@@ -17,6 +17,18 @@ m tall.
 GOOD LUCK � 
 */
 
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and
+improve it.
+Your tasks:
+1. Print a nice output to the console, saying who has the higher BMI. The message
+is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+BMI (28.3) is higher than John's (23.9)!"
+Hint: Use an if/else statement �
+GOOD LUCK �
+*/
+
 let markHigherBMI;
 let markWeight = 78;
 let markHeight = 1.69;
@@ -38,6 +50,11 @@ if (markBMI > johnBMI) {
 
 console.log("Marks BMI: "+ markBMI);
 console.log("Johns BMI: "+ johnBMI);
-console.log("Is Marks BMI higher?: "+markHigherBMI)
+
+if(markHigherBMI) {
+    console.log(`Mark's BMI (${Math.round(markBMI)}) is higher than John's (${Math.round(johnBMI)})!`)
+} else {
+    console.log(`John's BMI (${Math.round(johnBMI)})is higher than Mark's (${Math.round(markBMI)})!`)
+};
 
 
